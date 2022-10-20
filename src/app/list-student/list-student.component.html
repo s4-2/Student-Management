@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div class="container">
+        <h2 class="text-center"> Student List</h2>
+        <table class = "table table-striped table-hover text-center border-primary">
+            <thead>
+                <tr class="text-center">
+                    <th>Student Id</th>
+                    <th>Student Name</th>
+                    <th>Student Age</th>
+                    <th>Student Gender</th>
+                    <th>Student Marks</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let std of student">
+                    <td>{{ std.id}}</td>
+                    <td>{{ std.studentName}}</td>
+                    <td>{{ std.studentAge}}</td>
+                    <td>{{ std.studentGender}}</td>
+                    <td>{{ std.marks}}</td>
+                    <td>
+                        <button (click) = "updateStudent(std.id)" class="btn btn-outline-success"> Update </button>
+                        <button (click) = "deleteStudent(std.id)" class="btn btn-outline-danger" style="margin-left:10px;"> Delete </button>
+                        <button (click) = "viewStudent(std.id)" class="btn btn-outline-primary" style="margin-left:10px;"> View </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

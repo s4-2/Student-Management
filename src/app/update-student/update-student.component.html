@@ -1,0 +1,30 @@
+<h3 class="text-center">Update Student Information</h3>
+<div class="container" >
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group col-lg-5 offset-md-4">
+        <label>Name</label>
+        <input type="text" class="form-control" id="studentName" 
+        [(ngModel)] = "student.studentName" name="studentName">
+    </div>
+
+    <div class="form-group col-lg-5 offset-md-4">
+        <label>Age</label>
+        <input type="text" class="form-control" id="studentAge" 
+        [(ngModel)] = "student.studentAge" name="studentAge">
+    </div>
+
+    <div class="form-group col-lg-5 offset-md-4">
+        <label>Gender</label>
+        <input type="text" class="form-control" id="studentGender" 
+        [(ngModel)] = "student.studentGender" name="studentGender">
+    </div>
+
+    <div class="form-group col-lg-5 offset-md-4">
+        <label>Marks</label>
+        <input type="text" class="form-control" id="marks" 
+        [(ngModel)] = "student.marks" name="marks">
+    </div>
+
+    <button class="btn btn-success offset-md-6" type="submit">Submit</button>
+</form>
+</div>

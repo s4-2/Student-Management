@@ -1,0 +1,37 @@
+<h3 class="text-center">Student Information</h3>
+<div class="container col-sm-6 offset-md-4" >
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group col-lg-8">
+        <label>Student Id</label>
+        <input type="text" class="form-control" id="id" 
+        [(ngModel)] = "student.id" name="id">
+    </div>
+
+    <div class="form-group col-lg-8">
+        <label>Name</label>
+        <input type="text" class="form-control" id="studentName" 
+        [(ngModel)] = "student.studentName" name="studentName">
+    </div>
+
+    <div class="form-group col-lg-8">
+        <label>Age</label>
+        <input type="text" class="form-control" id="studentAge" 
+        [(ngModel)] = "student.studentAge" name="studentAge">
+    </div>
+
+    <div class="form-group col-lg-8">
+        <label>Gender</label>
+        <input type="text" class="form-control" id="studentGender" 
+        [(ngModel)] = "student.studentGender" name="studentGender">
+    </div>
+
+    <div class="form-group col-lg-8">
+        <label>Marks</label>
+        <input type="text" class="form-control" id="marks" 
+        [(ngModel)] = "student.marks" name="marks">
+    </div>
+
+    <button class="btn btn-success offset-md-3" type="submit">Submit</button>
+</form>
+</div>
